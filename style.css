@@ -1,0 +1,21 @@
+/*body {
+    background-image: url("images/city.jpg");
+    background-size: cover;
+}*/
+body {
+    height: 1000px;
+    scroll-behavior: smooth;
+}
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background-color: #0B0C10;
+    display: flex;
+    align-items: center;
+}
+.home-icon {
+    width: 40px;
+}
