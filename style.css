@@ -2,20 +2,69 @@
     background-image: url("images/city.jpg");
     background-size: cover;
 }*/
-body {
-    height: 1000px;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+html {
     scroll-behavior: smooth;
 }
+body {
+    height: 1000px;
+    background-image: url("images/city.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 section {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
-    background-color: #0B0C10;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+}
+a {
+    color: lightgray;
+    text-decoration: none;
+    cursor: default;
+}
+.home {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .home-icon {
-    width: 40px;
+    width: 50px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.home a {
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+#info {
+    display: inline;
+    float: right;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+}
+ul li:nth-child(4) a {
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: solid 2px white;
 }
